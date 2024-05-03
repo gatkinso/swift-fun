@@ -1,7 +1,7 @@
 // The Swift Programming Language
 // https://docs.swift.org/swift-book
 
-import MyLib
+@_exported import MyLib
 
 func main() {
    let z = myLibAdd(2, 3)
