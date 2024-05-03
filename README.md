@@ -2,7 +2,7 @@
 
 Feel free to branch, fork, do whatever here - this is all about learning.  So far everything is very basic, but the intent is to explore some more advanced topics.
 
-The master branch is protected, but only requires one approval.  Please commit to your own branch if you are adding stuff.
+The main branch is protected, but only requires one approval.  Please commit to your own branch if you are adding stuff.
 
 This is all targeting MacOS, but there is no reason why you cannot run this on other operating systems provided you have have a proper installation of Swift.
 
