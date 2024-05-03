@@ -8,7 +8,7 @@ This is all targeting MacOS, but there is no reason why you cannot run this on o
 
 Everything here is a very basic starting point to explore Swift syntax, packages, unit testing techniques.
 
-Also, export things like... is the style "canonical Swift?"  Does such a thing exist like it seems to in Go?  Maybe.
+Also, export things like... is the style "canonical Swift?"  Does such a thing exist like it seems to in Go?
 
 Basically explore things to help someone hit the ground running who is stepping into a Swift developer role.
 
