@@ -24,7 +24,7 @@ you@mac swift-fun % swift build
 you@mac swift-fun % cd swift-fun/MyLib
 you@mac swift-fun % swift test
 ```
-Output:
+Output... something like:
 ```
 geoffrey@redchip MyLib % swift test
 Building for debugging...
@@ -56,10 +56,11 @@ you@mac swift-fun % swift package clean
 you@mac swift-fun % cd ../MyEXE
 you@mac swift-fun % swift run
 ```
-Output:
+Output... something like:
 ```
 geoffrey@redchip MyExe % swift run
 Building for debugging...
 Build complete! (0.27s)
 2+3 better equal: 5
+...
 ````
