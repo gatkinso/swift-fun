@@ -7,6 +7,13 @@ func main() {
    let z = myLibAdd(2, 3)
 
    print("2+3 better equal: \(z)")
+
+    let provider = NetworkProvider()
+    let controller = DataController(provider)
+
+    let result = controller.doLookup()
+
+    print("Look up returned: \(result)")
 }
 
 main()
