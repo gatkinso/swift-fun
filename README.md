@@ -1,16 +1,14 @@
 # swift-fun : a playground to explore Swift programming
 
-Feel free to branch, fork, do whatever here - this is all about learning.  So far everything is very basic, but the intent is to explore some more advanced topics.
+Feel free to branch, fork, do whatever here - this is all about learning.
 
-The main branch is protected, but only requires one approval.  Please commit to your own branch if you are adding stuff.
+The main branch is protected, but only requires one approval. Please commit to your own branch if you are adding stuff.
 
 This is all targeting MacOS, but there is no reason why you cannot run this on other operating systems provided you have have a proper installation of Swift.
 
 Everything here is a very basic starting point to explore Swift syntax, packages, unit testing techniques.
 
-Also, export things like... is the style "canonical Swift?"  Does such a thing exist like it seems to in Go?
-
-Basically explore things to help someone hit the ground running who is stepping into a Swift developer role.
+Basically let's explore things to help someone hit the ground running who is stepping into a Swift developer role.
 
 ## Building
 ```
@@ -24,7 +22,7 @@ you@mac swift-fun % swift build
 you@mac swift-fun % cd swift-fun/MyLib
 you@mac swift-fun % swift test
 ```
-Output... something like:
+Output... something like (this will change as functionality is added):
 ```
 geoffrey@redchip MyLib % swift test
 Building for debugging...

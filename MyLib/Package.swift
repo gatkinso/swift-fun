@@ -22,5 +22,8 @@ let package = Package(
         .testTarget(
             name: "DataControllerTests",
             dependencies: ["MyLib"]),
+        .testTarget(
+            name: "NetworkManagerTests",
+            dependencies: ["MyLib"]),
     ]
 )

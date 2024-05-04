@@ -3,45 +3,40 @@ import XCTest
 
 @testable import MyLib
 
-class DataControllerTests: XCTestCase
-{
-  func test_ProductionCode()
-  {
-    let provider = NetworkProvider()
-    let controller = DataController(provider)
+class DataControllerTests: XCTestCase {
+    func test_ProductionCode() {
+        let provider = NetworkProvider()
+        let controller = DataController(provider)
 
-    let elapsed = controller.performDataRequest()
+        let elapsed = controller.performDataRequest()
 
-    XCTAssertFalse(elapsed < 10, "Test is meant to take too long")
-  }
+        XCTAssertFalse(elapsed < 10, "Test is meant to take too long")
+    }
 
-  func test_MockCode() 
-  {
-    let provider = MockedNetworkProvider()
-    let controller = DataController(provider)
+    func test_MockCode() {
+        let provider = MockedNetworkProvider()
+        let controller = DataController(provider)
 
-    let elapsed = controller.performDataRequest()
+        let elapsed = controller.performDataRequest()
 
-    XCTAssertTrue(elapsed < 10, "Test Took too long")
-  }
+        XCTAssertTrue(elapsed < 10, "Test Took too long")
+    }
 
-  func test_LookupFails() 
-  {
-    let provider = MockedNetworkProvider()
-    let controller = DataController(provider)
+    func test_LookupFails() {
+        let provider = MockedNetworkProvider()
+        let controller = DataController(provider)
 
-    provider.lookupRet = false
+        provider.lookupRet = false
 
-    let result = controller.doLookup()
-    XCTAssertFalse(result, "Test should have failed")
-  }
+        let result = controller.doLookup()
+        XCTAssertFalse(result, "Test should have failed")
+    }
 
-  func test_LookupSuccess() 
-  {
-    let provider = MockedNetworkProvider()
-    let controller = DataController(provider)
+    func test_LookupSuccess() {
+        let provider = MockedNetworkProvider()
+        let controller = DataController(provider)
 
-    let result = controller.doLookup()
-    XCTAssertTrue(result, "Test Failed")
-  }
+        let result = controller.doLookup()
+        XCTAssertTrue(result, "Test Failed")
+    }
 }
