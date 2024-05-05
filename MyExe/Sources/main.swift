@@ -10,7 +10,8 @@ func main() {
 
     ///////////
 
-    let provider = NetworkProvider()
+    var provider: NetworkProviding
+    provider = NetworkProvider()
     let controller = DataController(provider)
     let result = controller.doLookup()
 

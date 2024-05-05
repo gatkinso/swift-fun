@@ -24,22 +24,21 @@ public class NetworkProvider: NetworkProviding {
     }
 }
  
-class MockedNetworkProvider: NetworkProviding {
-    var elapsedTimeMs: Int
-
+class MockedNetworkProvider: NetworkProvider {
     var lookupRet: Bool
 
-    init() {
-        self.elapsedTimeMs = 1
+    override init() {
         self.lookupRet = true
+        super.init()
+        self.elapsedTimeMs = 1
     }
 
-    func requestData() -> Int {
+    override func requestData() -> Int {
         self.elapsedTimeMs = 1
         return self.elapsedTimeMs
     }
 
-    func someExpensiveLookup() -> Bool {
+    override func someExpensiveLookup() -> Bool {
         return lookupRet
     }
 }
